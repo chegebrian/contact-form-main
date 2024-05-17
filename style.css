@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* font family */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* font classes */
+
+.karla-regular {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.karla-bold {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* reusable colors & font size */
+
+:root {
+  /* ## Colors */
+
+  --Light-Green: hsl(148, 38%, 91%);
+  --Green: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 56%);
+
+  --White: hsl(0, 0%, 100%);
+  --Medium-Grey: hsl(186, 15%, 59%);
+  --Dark-Grey: hsl(187, 24%, 22%);
+
+  /* ## Typography */
+  /* (labels) */
+
+  --Font-size: 16px;
+}
+
+body {
+  background-color: var(--Light-Green);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: var(--White);
+  border-radius: 1rem;
+  max-width: 375px;
+  padding: 1.5em;
+}
+
+form div {
+    margin-top: 1rem;
+}
+
+form h1 {
+  color: var(--Dark-Grey);
+}
+
+form label {
+  color: var(--Dark-Grey);
+}
+
+form input {
+  padding: 1rem;
+}
+
+form input,
+textarea {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border: 1px solid var(--Medium-Grey);
+  outline: none;
+  border-radius: 0.35rem;
+}
+
+form textarea:focus {
+  border: 2px solid var(--Dark-Grey);
+}
+
+input:focus {
+  border: 2px solid var(--Dark-Grey);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5em;
+}
+
+form button {
+color: var(--Light-Green);
+background-color: var(--Green);
+border: none;
+outline: none;
+padding: 1rem;
+border-radius: 0.35rem;
+cursor: pointer;
+}
+
+form button:hover {
+    background-color: hsla(169, 82%, 27%, 0.945);
+}
