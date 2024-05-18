@@ -33,54 +33,67 @@
         <h1 class="karla-bold">Contact Us</h1>
         <div class="grid">
           <label for="fname" class="karla-regular"
-            >First Name <span class="error"></span
+            >First Name
+            <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
+            <span class="error"></span
           ></label>
-          <input type="text" name="fname" id="fname" />
+          <input type="text" name="fname" id="fname" required />
         </div>
         <div class="grid">
           <label for="lname" class="karla-regular"
-            >Last Name <span class="error"></span
+            >Last Name
+            <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
+            <span class="error"></span
           ></label>
-          <input type="text" name="lname" id="lname" />
+          <input type="text" name="lname" id="lname" required />
         </div>
 
         <div class="grid">
           <label for="email" class="karla-regular"
-            >Email Address <span class="error"></span
+            >Email Address
+            <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
+            <span class="error"></span
           ></label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </div>
 
         <div>
           <label for="radio" class="karla-regular"
-            >Query Type <span class="error"></span
+            >Query Type
+            <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
+            <span class="error"></span
           ></label>
           <div class="radio-div">
-            <input type="radio" name="radio" id="enquiry" />
+            <input type="radio" name="radio" id="enquiry" required />
             <label for="enquiry" class="karla-regular">General Enquiry</label>
           </div>
-          <div class="radio div">
-            <input type="radio" name="radio" id="support" />
+          <div class="radio-div">
+            <input type="radio" name="radio" id="support" required />
             <label for="support" class="karla-regular">Support Request</label>
           </div>
         </div>
         <div class="grid">
           <label for="message" class="karla-regular"
-            >Message <span class="error"></span
+            >Message
+            <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
+            <span class="error"></span
           ></label>
-          <textarea name="Message" id="Message" rows="10"></textarea>
+          <textarea name="Message" id="Message" rows="10" required></textarea>
         </div>
 
         <div>
-          <input type="checkbox" name="checkbox" id="checkbox" />
+          <input type="checkbox" name="checkbox" id="checkbox" required />
           <label for="checkbox" class="karla-regular"
-            >I consent to being contacted by the team <span class="error"></span
+            >I consent to being contacted by the team
+            <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
+            <span class="error"></span
           ></label>
         </div>
         <div class="grid">
-          <button class="karla-regular">Submit</button>
+          <button class="karla-regular" type="submit">Submit</button>
         </div>
       </form>
+
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a

@@ -73,6 +73,10 @@ form input {
   padding: 1rem;
 }
 
+form input:hover{
+  border: 2px solid var(--Dark-Grey);
+}
+
 form input,
 textarea {
   font-family: "Karla", sans-serif;
@@ -88,6 +92,10 @@ form textarea:focus {
   border: 2px solid var(--Dark-Grey);
 }
 
+form textarea:hover {
+  border: 2px solid var(--Dark-Grey);
+}
+
 input:focus {
   border: 2px solid var(--Dark-Grey);
 }
@@ -96,6 +104,16 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 0.5em;
+}
+
+form .radio-div{
+border: 1px solid var(--Medium-Grey);
+border-radius: 0.35rem;
+padding: 1rem;
+}
+
+form .radio-div:hover{
+  border: 2px solid var(--Dark-Grey);
 }
 
 form button {
@@ -111,3 +129,11 @@ cursor: pointer;
 form button:hover {
     background-color: hsla(169, 82%, 27%, 0.945);
 }
+img{
+  width: 0.5rem;
+  height: 0.5rem;
+  filter: invert(38%) sepia(15%) saturate(3513%) hue-rotate(127deg) brightness(92%) contrast(91%);
+  vertical-align: super;
+}
+
+/* filter: invert(54%) sepia(92%) saturate(4431%) hue-rotate(335deg) brightness(89%) contrast(90%); */ 
