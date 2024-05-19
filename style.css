@@ -74,7 +74,7 @@ form input {
 }
 
 form input:hover{
-  border: 2px solid var(--Dark-Grey);
+  border: 2px solid var(--Green);
 }
 
 form input,
@@ -89,15 +89,15 @@ textarea {
 }
 
 form textarea:focus {
-  border: 2px solid var(--Dark-Grey);
+  border: 2px solid var(--Green);
 }
 
 form textarea:hover {
-  border: 2px solid var(--Dark-Grey);
+  border: 2px solid var(--Green);
 }
 
 input:focus {
-  border: 2px solid var(--Dark-Grey);
+  border: 2px solid var(--Green);
 }
 
 .grid {
@@ -113,7 +113,15 @@ padding: 1rem;
 }
 
 form .radio-div:hover{
-  border: 2px solid var(--Dark-Grey);
+  border: 2px solid var(--Green);
+}
+
+input[type="checkbox"]:checked {
+  accent-color: var(--Green);
+}
+
+input[type='radio'] {
+  accent-color: var(--Green);
 }
 
 form button {
