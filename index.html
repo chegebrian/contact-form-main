@@ -31,22 +31,24 @@
     <div class="wrapper">
       <form action="" novalidate>
         <h1 class="karla-bold">Contact Us</h1>
-        <div class="grid">
-          <label for="fname" class="karla-regular"
-            >First Name
-            <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
-            <span class="error"></span
-          ></label>
-          <input type="text" name="fname" id="fname" required />
-        </div>
-        <div class="grid">
-          <label for="lname" class="karla-regular"
-            >Last Name
-            <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
-            <span class="error"></span
-          ></label>
-          <input type="text" name="lname" id="lname" required />
-        </div>
+        <section class="name">
+          <div class="grid">
+            <label for="fname" class="karla-regular"
+              >First Name
+              <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
+              <span class="error"></span
+            ></label>
+            <input type="text" name="fname" id="fname" required />
+          </div>
+          <div class="grid">
+            <label for="lname" class="karla-regular"
+              >Last Name
+              <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
+              <span class="error"></span
+            ></label>
+            <input type="text" name="lname" id="lname" required />
+          </div>
+        </section>
 
         <div class="grid">
           <label for="email" class="karla-regular"
@@ -63,14 +65,16 @@
             <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
             <span class="error"></span
           ></label>
-          <div class="radio-div">
-            <input type="radio" name="radio" id="enquiry" required />
-            <label for="enquiry" class="karla-regular">General Enquiry</label>
-          </div>
-          <div class="radio-div">
-            <input type="radio" name="radio" id="support" required />
-            <label for="support" class="karla-regular">Support Request</label>
-          </div>
+          <section class="radio">
+            <div class="radio-div">
+              <input type="radio" name="radio" id="enquiry" required />
+              <label for="enquiry" class="karla-regular">General Enquiry</label>
+            </div>
+            <div class="radio-div">
+              <input type="radio" name="radio" id="support" required />
+              <label for="support" class="karla-regular">Support Request</label>
+            </div>
+          </section>
         </div>
         <div class="grid">
           <label for="message" class="karla-regular"
