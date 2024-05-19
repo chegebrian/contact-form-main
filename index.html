@@ -14,7 +14,7 @@
 
     <title>Frontend Mentor | Contact form</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -29,14 +29,14 @@
   </head>
   <body>
     <div class="wrapper">
-      <form action="" novalidate>
+      <form action="" novalidate class="form">
         <h1 class="karla-bold">Contact Us</h1>
         <section class="name">
           <div class="grid">
             <label for="fname" class="karla-regular"
               >First Name
               <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
-              <span class="error"></span
+              <span class="error fname-err"></span
             ></label>
             <input type="text" name="fname" id="fname" required />
           </div>
@@ -44,7 +44,7 @@
             <label for="lname" class="karla-regular"
               >Last Name
               <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
-              <span class="error"></span
+              <span class="error lname-err"></span
             ></label>
             <input type="text" name="lname" id="lname" required />
           </div>
@@ -54,7 +54,7 @@
           <label for="email" class="karla-regular"
             >Email Address
             <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
-            <span class="error"></span
+            <span class="error email-err"></span
           ></label>
           <input type="email" name="email" id="email" required />
         </div>
@@ -63,15 +63,27 @@
           <label for="radio" class="karla-regular"
             >Query Type
             <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
-            <span class="error"></span
+            <span class="error radio-err"></span
           ></label>
           <section class="radio">
             <div class="radio-div">
-              <input type="radio" name="radio" id="enquiry" required />
+              <input
+                type="radio"
+                name="radio"
+                id="enquiry"
+                value="General Enquiry"
+                required
+              />
               <label for="enquiry" class="karla-regular">General Enquiry</label>
             </div>
             <div class="radio-div">
-              <input type="radio" name="radio" id="support" required />
+              <input
+                type="radio"
+                name="radio"
+                id="support"
+                value="Support Request"
+                required
+              />
               <label for="support" class="karla-regular">Support Request</label>
             </div>
           </section>
@@ -80,9 +92,9 @@
           <label for="message" class="karla-regular"
             >Message
             <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
-            <span class="error"></span
+            <span class="error textbox-err"></span
           ></label>
-          <textarea name="Message" id="Message" rows="10" required></textarea>
+          <textarea name="message" id="message" rows="10" required></textarea>
         </div>
 
         <div>
@@ -90,8 +102,9 @@
           <label for="checkbox" class="karla-regular"
             >I consent to being contacted by the team
             <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
-            <span class="error"></span
-          ></label>
+          </label>
+          <br />
+          <span class="error checkbox-err karla-regular"></span>
         </div>
         <div class="grid">
           <button class="karla-regular" type="submit">Submit</button>
