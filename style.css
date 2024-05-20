@@ -150,6 +150,26 @@ img{
   vertical-align: baseline;
 }
 
+/* input:invalid{
+  border: 1px solid var(--Red);
+}
+input:invalid:focus{
+  border: 2px solid var(--Red);
+}
+input:invalid:hover{
+  border: 2px solid var(--Red);
+}
+
+textarea:invalid{
+  border: 1px solid var(--Red);
+}
+textarea:invalid:focus{
+  border: 2px solid var(--Red);
+}
+textarea:invalid:hover{
+  border: 2px solid var(--Red);
+} */
+
 
 /* filter: invert(54%) sepia(92%) saturate(4431%) hue-rotate(335deg) brightness(89%) contrast(90%); */ 
 
