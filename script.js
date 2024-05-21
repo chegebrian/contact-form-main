@@ -22,13 +22,53 @@ const radioEl = document.querySelector(".radio");
 //form element
 const formEl = document.querySelector("form");
 
+//success element
+const successEl = document.querySelector(".success-message");
+console.log(successEl);
+
+let timeoutId;
 //form submission
 formEl.addEventListener("submit", (e) => {
-  if (!firstNameEl.validity.valid) {
+  e.preventDefault();
+  if (
+    !firstNameEl.validity.valid ||
+    !lastNameEl.validity.valid ||
+    !emailEl.validity.valid ||
+    !messageEl.validity.valid ||
+    !checkboxEl.validity.valid ||
+    (!enquiryEl.validity.valid && !supportEl.validity.valid)
+  ) {
     showError();
     e.preventDefault();
+  } else {
+    clearInputs();
+    showSuccessMessage();
+    hideSuccessMessage();
   }
 });
+
+function showSuccessMessage() {
+  timeoutId = setTimeout(() => {
+    successEl.classList.remove("hide");
+  }, 1000);
+  return timeoutId;
+}
+
+function hideSuccessMessage() {
+  setTimeout(() => {
+    successEl.classList.add("hide");
+  }, 3000);
+}
+
+function clearInputs() {
+  firstNameEl.value = "";
+  lastNameEl.value = "";
+  emailEl.value = "";
+  messageEl.value = "";
+  enquiryEl.checked = "";
+  supportEl.checked = "";
+  checkboxEl.checked= "";
+}
 
 firstNameEl.addEventListener("input", (e) => {
   if (firstNameEl.validity.valid) {
@@ -94,7 +134,8 @@ function showError() {
     emailErr.textContent = "invalid email address";
     emailEl.style.borderColor = "hsl(0, 66%, 56%)";
   }
-  if (!enquiryEl.checked && !supportEl.checked) {
+
+  if (enquiryEl.validity.valueMissing && supportEl.validity.valueMissing) {
     radioErr.textContent = "Please select a query type";
   }
 
@@ -102,7 +143,7 @@ function showError() {
     textboxErr.textContent = "input required";
     messageEl.style.borderColor = "hsl(0, 66%, 56%)";
   }
-  if (!checkboxEl.checked) {
+  if (checkboxEl.validity.valueMissing) {
     checkboxErr.textContent =
       "To submit this form, please consent to being contacted";
   }

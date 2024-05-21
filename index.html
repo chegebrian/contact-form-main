@@ -28,6 +28,20 @@
     </style>
   </head>
   <body>
+    <div class="success-message hide">
+      <h2 class="karla-bold margin-bottom">
+        <img
+          src="./assets/images/icon-success-check.svg"
+          alt=""
+          srcset=""
+          class="success-icon"
+        />
+        Message Sent!
+      </h2>
+      <p class="karla-regular">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </div>
     <div class="wrapper">
       <form action="" novalidate class="form">
         <h1 class="karla-bold">Contact Us</h1>
@@ -38,7 +52,13 @@
               <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
               <span class="error fname-err"></span
             ></label>
-            <input type="text" name="fname" id="fname" pattern="[A-Za-z]{4,8}" required />
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              pattern="[A-Za-z]{4,8}"
+              required
+            />
           </div>
           <div class="grid">
             <label for="lname" class="karla-regular"
@@ -46,7 +66,13 @@
               <img src="./assets/images/asterisk-solid.svg" alt="" srcset="" />
               <span class="error lname-err"></span
             ></label>
-            <input type="text" name="lname" id="lname" pattern="[A-Za-z]{4,8}" required />
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              pattern="[A-Za-z]{4,8}"
+              required
+            />
           </div>
         </section>
 
@@ -119,18 +145,3 @@
     </div>
   </body>
 </html>
-
-<!-- 
-  
-  Please select a query type
-
-  
-  This field is required
-
-  
-  To submit this form, please consent to being contacted
-
-  
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon! -->
